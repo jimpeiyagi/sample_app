@@ -21,7 +21,7 @@ class MicropostsController < ApplicationController
   private
 
     def micropost_params
-      params.require(:micropost).permit(:content)
+      params.require(:micropost).permit(:content, :ridedate, :from, :to, :can_ride_person, :ride_on_flg)
     end
 
     def correct_user

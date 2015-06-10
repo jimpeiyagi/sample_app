@@ -18,15 +18,14 @@
     </div>
   </div>  
 <% else %>
-<div class="center hero-unit">
-  <h1>やぎったーへようこそ</h1>
+<div class='home-box'>
+  <h1>移動をもっと楽しく</h1>
 
   <h2>
-    やぎったーの世界を覗いてみよう
+    車の相乗りで移動時間をハッピーに
   </h2>
 
-  <%= link_to "さっそくユーザー登録するぜよ！", signup_path, class: "btn btn-large btn-primary" %>
+  <center><%= link_to "さっそく探してみる", signup_path, class: "btn btn-large btn-primary" %></center>
 </div>
 
-<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
 <% end %>

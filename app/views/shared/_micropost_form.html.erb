@@ -1,7 +1,15 @@
 <%= form_for(@micropost) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="field">
-    <%= f.text_area :content, placeholder: "Compose new micropost..." %>
+出発地
+<%= f.text_field :from%>
+到着地
+<%= f.text_field :to %>
+出発日時
+    <%= f.datetime_local_field :ridedate %> 
+乗せられる人数
+    <%= f.number_field :can_ride_person %> 
+    <%= f.text_area :content, placeholder: "その他のコメント..." %>
   </div>
   <%= f.submit "Post", class: "btn btn-large btn-primary" %>
 <% end %>
