@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20150610013533) do
     t.string   "from"
     t.string   "to"
     t.integer  "can_ride_person"
-    t.boolean  "ride_on_flag"
+    t.boolean  "ride_on_flg"
   end
 
   add_index "microposts", ["user_id", "created_at"], name: "index_microposts_on_user_id_and_created_at"
