@@ -1,9 +1,10 @@
 <%= form_for(@micropost) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="field">
-
+  <div class="radio">
   <label><%= f.radio_button :ride_on_flg, "true" %>乗りたい</label>
   <label><%= f.radio_button :ride_on_flg, "false" %>乗せたい</label>
+  </div>
 出発地
 <%= f.text_field :from%>
 到着地
