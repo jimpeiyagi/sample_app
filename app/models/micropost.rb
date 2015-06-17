@@ -5,7 +5,6 @@ class Micropost < ActiveRecord::Base
   validates :user_id, presence: 
 
 
-
   # 与えられたユーザーがフォローしているユーザー達のマイクロポストを返す。
   def self.from_users_followed_by(user)
     followed_user_ids = "SELECT followed_id FROM relationships
