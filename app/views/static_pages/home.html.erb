@@ -1,6 +1,7 @@
 <% if signed_in? %>
   <div class="row">
     <aside class="span4">
+      <div class="thumbnail">
       <section>
         <%= render 'shared/user_info' %>
       </section>
@@ -10,10 +11,13 @@
       <section>
         <%= render 'shared/micropost_form' %>
       </section>
+      </div>
     </aside>
         <div class="span8">
+        <div class=" thumbnail">
           <h3>タイムライン</h3>
       <%= render 'shared/feed' %>
+      </div>
     </div>
   </div>
 

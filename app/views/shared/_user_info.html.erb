@@ -1,5 +1,9 @@
 <a href="<%= user_path(current_user) %>">
-  <%= gravatar_for current_user, size: 52 %>
+      　<% if @current_user.image? %>
+　　<%= image_tag(@current_user.image.thumb.url , :class => "icon thumbnail") %>
+　<% else %>
+　　<%= image_tag('http://f.st-hatena.com/images/fotolife/j/jimpeipei/20150617/20150617142712.gif?1434518841' , :class => "icon thumnail") %>
+　<% end %>
 </a>
 <h1>
   <%= current_user.name %>

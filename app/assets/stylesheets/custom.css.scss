@@ -178,6 +178,7 @@ aside {
       display: block;
       margin-bottom: 3px;
       line-height: 1;
+      background-color: white;
     }
     h1 {
       font-size: 1.4em;
@@ -336,4 +337,32 @@ aside {
 
 .ridedate {
     font-size: 18px;
+}
+
+.icon{
+  float: left;
+}
+
+
+/* clearfix */
+.boxcontainer:before,
+.boxcontainer:after {
+    content: "";
+    display: table;
+}
+ 
+.boxcontainer:after {
+    clear: both;
+}
+
+
+.leftbox{
+  float: left;
+  width: 49%;
+}
+
+.rightbox{
+  float:left;
+  width: 49%;
+  padding-left:10px;
 }

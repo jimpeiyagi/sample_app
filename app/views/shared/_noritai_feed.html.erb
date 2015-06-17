@@ -2,11 +2,18 @@
 
 
 
-
-    <%= link_to gravatar_for(noritai_feed.user), noritai_feed.user %>
-    <span class="user">
+   <span class="user">
       <%= link_to noritai_feed.user.name, noritai_feed.user %>
     </span>
+ <% if noritai_feed.user.image? %>
+　　<%= image_tag(noritai_feed.user.image.thumb.url , :class => "icon")%>
+　<% else %>
+　　<%= image_tag('http://f.st-hatena.com/images/fotolife/j/jimpeipei/20150617/20150617142712.gif?1434518841' , :class => "icon thumnail") %>
+　<% end %>
+
+
+
+
   <br>
   <span class="ridedate"><%= noritai_feed.ridedate %></span>出発</br>
   <span class="from"><%= noritai_feed.from %></span><%= image_tag src='http://f.st-hatena.com/images/fotolife/j/jimpeipei/20150616/20150616214942.jpg?1434458998', :size => '40x40' %><span class="to"><%= noritai_feed.to %></span>

@@ -1,17 +1,25 @@
 <% provide(:title, @user.name) %>
 <div class="row">
   <aside class="span4">
+  <div class="thumbnail">
     <section>
       <h1>
-        <%= gravatar_for @user %>
+
+      <% if @user.image? %>
+　　<%= image_tag(@user.image.thumb.url , :class => "icon")%>
+　<% else %>
+　　<%= image_tag('http://f.st-hatena.com/images/fotolife/j/jimpeipei/20150617/20150617142712.gif?1434518841' , :class => "icon thumnail") %>
+　<% end %>
         <%= @user.name %>
       </h1>
     </section>
     <section>
       <%= render 'shared/stats' %>
     </section>
+    </div>
   </aside>
   <div class="span8">
+  <div class="thumbnail">
     <%= render 'follow_form' if signed_in? %>
     <% if @user.microposts.any? %>
       <h3>Microposts (<%= @user.microposts.count %>)</h3>
@@ -20,5 +28,6 @@
       </ol>
       <%= will_paginate @microposts %>
     <% end %>
+    </div>
   </div>
 </div>

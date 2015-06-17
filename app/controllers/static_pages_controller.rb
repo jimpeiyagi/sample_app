@@ -19,9 +19,11 @@ class StaticPagesController < ApplicationController
 
   def nosetai
       @nosetai  =  Micropost.where(ride_on_flg: false).paginate(page: params[:page])
+      @noritai  =  Micropost.where(ride_on_flg: true).paginate(page: params[:page])
   end
 
   def noritai
       @noritai  =  Micropost.where(ride_on_flg: true).paginate(page: params[:page])
+      @nosetai  =  Micropost.where(ride_on_flg: false).paginate(page: params[:page])
   end
 end
