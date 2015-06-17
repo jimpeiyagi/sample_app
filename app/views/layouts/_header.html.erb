@@ -1,11 +1,10 @@
 <header class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-      <%= link_to "のってけば？", root_path, id: "logo" %>
+      <%= link_to "乗せてもらえば？", root_path, id: "logo" %>
       <nav>
         <ul class="nav pull-right">
           <li><%= link_to "ホーム", root_path %></li>
-          <li><%= link_to "ヘルプ", help_path %></li>
           <% if signed_in? %>
             <li><%= link_to "ユーザー", users_path %></li>
             <li><%= link_to "乗りたい人はこちら", nosetai_path %></li>
