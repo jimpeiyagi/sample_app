@@ -116,14 +116,14 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: black;
+  color: #808080;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
   &:hover {
-    color: gray;
+    color: #a0a0a0;
     text-decoration: none;
   }
 }
