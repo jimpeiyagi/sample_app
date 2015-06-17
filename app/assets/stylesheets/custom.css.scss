@@ -169,7 +169,7 @@ footer {
 aside {
   section {
     padding: 10px 0;
-    border-top: 1px solid black;
+    border-top: 1px solid $grayMediumLight;
     &:first-child {
       border: 0;
       padding-top: 0;
@@ -199,7 +199,7 @@ aside {
   a {
     float: left;
     padding: 0 10px;
-    border-left: 1px solid black;
+    border-left: 1px solid $grayMediumLight;
     color: gray;
     &:first-child {
       padding-left: 0;
@@ -257,9 +257,9 @@ input {
   li {
     overflow: auto;
     padding: 10px 0;
-    border-top: 1px solid black;
+    border-top: 1px solid $grayMediumLight;
     &:last-child {
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid $grayMediumLight;
     }
   }
 }
@@ -273,7 +273,7 @@ input {
 
   li {
     padding: 10px 0;
-    border-top: 1px solid black;
+    border-top: 1px solid $grayMediumLight;
   }
 }
 .content {
@@ -305,8 +305,7 @@ aside {
     color:#fff;
     background-color:#ffa035;
     border-radius:5px;
-    box-shadow:2px 2px #ff8300;
-    text-shadow:0 -1px #ff8300;
+
     display: block;
 }
 
@@ -321,8 +320,6 @@ aside {
     color:#fff;
     background-color:#49a9d4;
     border-radius:5px;
-    box-shadow:2px 2px #1a6ea0;
-    text-shadow:0 -1px #1a6ea0;
     display: block;
 }
 
@@ -340,5 +337,3 @@ aside {
 .ridedate {
     font-size: 18px;
 }
-
-

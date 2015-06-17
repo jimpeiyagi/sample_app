@@ -1,3 +1,7 @@
-<% provide(:title, 'Nosetai') %>
-
-<%= render 'shared/feed' %>
+<center><div class="nosetai">乗りたい人たち</div></center>
+<% if @nosetai.any? %>
+  <ol class="microposts">
+    <%= render partial: 'shared/nosetai_feed', collection: @nosetai %>
+  </ol>
+  <%= will_paginate @nosetai %>
+<% end %>

@@ -18,11 +18,10 @@ class StaticPagesController < ApplicationController
   end
 
   def nosetai
-      @micropost  = current_user.microposts.build
-      @feed_items = current_user.feed.paginate(page: params[:page])
+      @nosetai  =  Micropost.where(ride_on_flg: false).paginate(page: params[:page])
   end
 
   def noritai
-    @microposts = Micropost.all
+      @noritai  =  Micropost.where(ride_on_flg: true).paginate(page: params[:page])
   end
 end

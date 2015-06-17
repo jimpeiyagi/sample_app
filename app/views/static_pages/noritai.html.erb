@@ -1,1 +1,7 @@
-<%= @microposts %>
+<center><div class="noritai">乗りたい人たち</div></center>
+<% if @noritai.any? %>
+  <ol class="microposts">
+    <%= render partial: 'shared/noritai_feed', collection: @noritai %>
+  </ol>
+  <%= will_paginate @noritai %>
+<% end %>

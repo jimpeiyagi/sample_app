@@ -5,13 +5,13 @@
   <label><%= f.radio_button :ride_on_flg, "true" %>乗りたい</label>
   <label><%= f.radio_button :ride_on_flg, "false" %>乗せたい</label>
   </div>
-出発地
+<%= f.label :出発地 %>
 <%= f.text_field :from%>
-到着地
+<%= f.label :目的地 %>
 <%= f.text_field :to %>
-出発日時
-    <%= f.datetime_local_field :ridedate %> 
-    <%= f.text_area :content, placeholder: "その他のコメント..." %>
+<%= f.label :出発日時 %>
+<%= f.datetime_local_field :ridedate %> 
+<%= f.text_area :content, placeholder: "好きな音楽、趣味などを知らせて気の合う人と移動しよう♪" %>
   </div>
   <%= f.submit "Post", class: "btn btn-large btn-primary" %>
 <% end %>
