@@ -29,11 +29,15 @@
 
 
   <br>
-  <span class="ridedate"><%= feed_item.ridedate %></span>出発</br>
+
   <span class="from"><%= feed_item.from %></span><%= image_tag src='http://f.st-hatena.com/images/fotolife/j/jimpeipei/20150616/20150616214942.jpg?1434458998', :size => '40x40' %><span class="to"><%= feed_item.to %></span>
   
+
     <span class="content"><%= feed_item.content %></span>
+    <br>
+        <span class="ridedate"><%= feed_item.ridedate %></span>出発<br>
     <span class="timestamp">
+
       Posted <%= time_ago_in_words(feed_item.created_at) %> ago.
     </span>
   <% if current_user?(feed_item.user) %>

@@ -16,4 +16,5 @@ SampleApp::Application.routes.draw do
   match '/contact', to: 'static_pages#contact', via: 'get'
   match '/noritai', to: 'static_pages#noritai', via: 'get'
   match '/nosetai', to: 'static_pages#nosetai', via: 'get'
+  match '/norinose', to: 'static_pages#norinose', via: 'get'
 end

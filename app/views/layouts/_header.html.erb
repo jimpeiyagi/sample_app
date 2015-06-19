@@ -7,8 +7,7 @@
           <li><%= link_to "ホーム", root_path %></li>
           <% if signed_in? %>
             <li><%= link_to "ユーザー", users_path %></li>
-            <li><%= link_to "乗りたい人はこちら", nosetai_path %></li>
-            <li><%= link_to "乗せたい人はこちら", noritai_path %></li>
+            <li><%= link_to "乗りたい乗せたい全て見る", norinose_path %></li>
             <li id="fat-menu" class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 アカウント <b class="caret"></b>

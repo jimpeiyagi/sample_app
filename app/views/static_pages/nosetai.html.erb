@@ -1,32 +1,15 @@
-<h1>乗せてもらえば？</h1>
-<div class="boxcontainer">
 
-<div class="leftbox">
+<div class="boxcontainer">
 <div class="thumbnail">
 <center><div class="nosetai">乗せたい人たち</div></center>
 <% if @nosetai.any? %>
   <ol class="microposts">
-    <%= render partial: 'shared/nosetai_feed', collection: @nosetai %>
+    <%= render partial: 'shared/nosetai_feed', collection: @noritai %>
   </ol>
   <%= will_paginate @nosetai %>
 <% end %>
-</div>
-</div>
-
-
-<div class="rightbox">
-<div class="thumbnail">
-<center><div class="noritai">乗りたい人たち</div></center>
-<% if @noritai.any? %>
-  <ol class="microposts">
-    <%= render partial: 'shared/noritai_feed', collection: @noritai %>
-  </ol>
-  <%= will_paginate @noritai %>
-<% end %>
 
 
 
 </div>
-</div>
-
 </div>

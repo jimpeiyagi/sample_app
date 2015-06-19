@@ -11,12 +11,13 @@
   </div>
   <% end %>
   </span>
-  <br>
-  <span class="ridedate"><%= micropost.ridedate %></span>に出発</br>
+
   <span class="from"><%= micropost.from %></span>
   <%= image_tag src='http://f.st-hatena.com/images/fotolife/j/jimpeipei/20150616/20150616214942.jpg?1434458998', :size => '40x40' %>
   <span class="to"><%= micropost.to %></span>
   <span class="content"><%= micropost.content %></span>
+  <br>
+    <span class="ridedate"><%= micropost.ridedate %></span>に出発</br>
   <span class="timestamp">
     Posted <%= time_ago_in_words(micropost.created_at) %> ago.
   </span>
